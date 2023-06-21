@@ -1,0 +1,190 @@
+@font-face {
+  font-family: "SolaimanLipi";
+  font-display: swap;
+  font-style: normal;
+  src: url("../fonts/SolaimanLipi.eot"); /* IE9*/
+  src: url("../fonts/SolaimanLipi.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/SolaimanLipi.woff") format("woff"),
+    url("../fonts/SolaimanLipi.ttf") format("truetype"),
+    url("../fonts/SolaimanLipi.svg#SolaimanLipi") format("svg");
+}
+@font-face {
+  font-family: "Hind Siliguri";
+  font-display: swap;
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/HindSiliguri-Bold.woff") format("woff"),
+    url("../fonts/HindSiliguri-Bold.woff2") format("woff2"),
+    url("../fonts/HindSiliguri-Bold.ttf") format("truefype");
+}
+@font-face {
+  font-family: "Hind Siliguri";
+  font-display: swap;
+  font-style: normal;
+  font-weight: 600;
+  src: url("../fonts/HindSiliguri-SemiBold.woff") format("woff"),
+    url("../fonts/HindSiliguri-SemiBold.woff2") format("woff2"),
+    url("../fonts/HindSiliguri-SemiBold.ttf") format("truefype");
+}
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+:root {
+  --font-1: "SolaimanLipi", "Roboto";
+  --font-2: "Hind Siliguri", "sans-serif";
+  --font-3: "Roboto", "SolaimanLipi";
+  --brand: #15803d;
+  --cyan: #11a7ca;
+  --dark: #0f172a;
+  --gray: #374151;
+  --dark-table-color: #cbd5e1;
+  --dark-table-bg: #0f172a;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  color: #475569;
+  background: #fff;
+  font-family: var(--font-1);
+  font-size: 1.2rem;
+  line-height: 1.8rem;
+  font-weight: 400;
+}
+
+h1,
+h2 {
+  font-family: var(--font-2);
+  font-weight: 700;
+  font-size: 2.5rem;
+  color: var(--brand);
+}
+
+h3,
+h4,
+h5 {
+  font-family: var(--font-2);
+  font-weight: 600;
+}
+
+h3 {
+  font-size: 2rem;
+  color: var(--brand);
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  padding: 1rem;
+  color: white;
+  background-color: var(--brand);
+}
+section {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+.logo-img {
+  max-width: 100px;
+  max-height: 100px;
+}
+
+.logo-name {
+  filter: invert(1);
+}
+
+.service-item {
+  height: 200px;
+}
+/* wol-carousel style */
+.owl-nav button {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+}
+
+.owl-prev {
+  left: 13px;
+}
+
+.owl-next {
+  right: 13px;
+}
+
+.owl-nav button i {
+  font-size: 25px;
+  display: flex;
+  align-items: center;
+  width: 30px;
+  height: 80px;
+  padding: 0.5rem;
+  color: #cbd5e1;
+  background: var(--dark);
+  transition: all 0.4s ease;
+  -webkit-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  -ms-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  opacity: 0.5;
+}
+
+.owl-nav button:hover i {
+  opacity: 0.8;
+}
+
+.owl-dots {
+  text-align: center;
+  padding-top: 15px;
+}
+.owl-dots button.owl-dot {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  display: inline-block;
+  background: #ccc;
+  margin: 0 3px;
+}
+.owl-dots button.owl-dot.active {
+  background-color: #000;
+}
+.owl-dots button.owl-dot:focus {
+  outline: none;
+}
+
+#documents object {
+  width: 100%;
+  min-height: 350px;
+}
+footer {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  color: #cbd5e1;
+  background: var(--dark);
+}
+
+footer a {
+  color: #cbd5e1;
+}
+
+footer ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+footer .icon {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  text-align: center;
+  padding: 8px;
+  margin-right: 10px;
+  width: 30px;
+  height: 30px;
+  opacity: 0.5;
+}
+
+.table-dark {
+  --bs-table-color: var(--dark-table-color);
+  --bs-table-bg: var(--dark-table-bg);
+}
