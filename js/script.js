@@ -28,7 +28,7 @@ $(document).ready(function () {
   $(".slider-2").owlCarousel({
     loop: true,
     lazyLoad: true,
-    margin:0,
+    margin: 0,
     nav: true,
     navText: [
       "<i class='fa fa-chevron-left'></i>",
@@ -40,5 +40,32 @@ $(document).ready(function () {
     smartSpeed: 800,
     items: 1,
     responsiveClass: true,
+  });
+  $(".slider-3").owlCarousel({
+    loop: true,
+    lazyLoad: true,
+    margin: 10,
+    nav: true,
+    dots: false,
+    navText: [
+      "<i class='fa fa-chevron-left'></i>",
+      "<i class='fa fa-chevron-right'></i>",
+    ],
+    autoplay: true,
+    autoplayTimeout: 3000,
+    autoplayHoverPause: true,
+    smartSpeed: 800,
+    responsiveClass: true,
+    responsive: {
+      0: {
+        items: 1,
+      },
+      600: {
+        items: 3,
+      },
+      1000: {
+        items: 4,
+      },
+    },
   });
 });
